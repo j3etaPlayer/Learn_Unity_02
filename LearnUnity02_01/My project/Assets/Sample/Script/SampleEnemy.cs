@@ -17,6 +17,7 @@ public class SampleEnemy : MonoBehaviour
     void Start()
     {
         enemyRigid = GetComponent<Rigidbody>();
+        targetPoint = GameObject.Find("CenterPivot");
     }
 
     // Update is called once per frame
