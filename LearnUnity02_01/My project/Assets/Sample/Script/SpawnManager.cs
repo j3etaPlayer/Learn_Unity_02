@@ -10,24 +10,34 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private Transform dollarSpawnPosition;
     [SerializeField] private GameObject powerUpItem;
     [SerializeField] private Transform powerUpSpawnPosition;
+    public int enemyCount = 0;
+    public int waveNumber = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        SpawnEnemy();
+        SpawnEnemy(waveNumber);
         SpawnItem();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        enemyCount = FindObjectsOfType<SampleEnemy>().Length;
+        if (enemyCount == 0)
+        {
+            SpawnEnemy(waveNumber);
+            waveNumber++;
+        }
     }
 
     // 한개의 적만 특정위치에서 생성되는 코드
-    private void SpawnEnemy()
+    private void SpawnEnemy(int spawnNumber)
     {
-        GameObject enemyObj = Instantiate(enemy, enemySpawnPosition.position, Quaternion.identity);
+        for(int i = 0; i <= spawnNumber; i++)
+        {
+            GameObject enemyObj = Instantiate(enemy, enemySpawnPosition.position, Quaternion.identity);
+        }
     }
     private GameObject SpawnItem()
     {

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 842642063446620394}
   m_Layer: 0
   m_Name: Enemy_small
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -149,3 +149,4 @@ MonoBehaviour:
   targetPoint: {fileID: 0}
   enemyMoveSpeed: 1
   forceMode: 0
+  impact: 10
