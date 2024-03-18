@@ -9,7 +9,7 @@ public class SamplePlayerControl : MonoBehaviour
 
     [SerializeField] private GameObject powerIndicator; // 파워업 상태를 확인하기위한 오브젝트
     public bool isPowerUp = false;
-    [SerializeField] private float powerUpDuration = 1f;
+    [SerializeField] private float powerUpDuration = 5f;
     [SerializeField] private float impactPower = 10f;
 
     // Start is called before the first frame update
@@ -27,13 +27,23 @@ public class SamplePlayerControl : MonoBehaviour
         Vector3 direction = new Vector3(horizontal, 0, vertical);
 
         playerRigid.AddForce(direction * moveSpeed);
+        
         if (isPowerUp)
         {
-            StartCoroutine("PlayerPolwerUp");
-            //Invoke("PowerUpTimeOver", powerUpDuration);          // 뒤의 변수 : 파워업이 지속되길 원하는 시간 => 변수화 시켜서 데이터를 변경하거나 조합할 수 있다.
+            StartCoroutine(PlayerPolwerUp());
+            // Invoke("PowerUpTimeOver", powerUpDuration);
+            // 뒤의 변수 : 파워업이 지속되길 원하는 시간 => 변수화 시켜서 데이터를 변경하거나 조합할 수 있다.
         }
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        ICollisionable col = collision.gameObject.GetComponent<ICollisionable>();
+        if (col != null)
+        {
+            Debug.Log("col 충돌!");
+            col.CollideWithPlayer(transform, impactPower);
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PowerUp"))
@@ -44,28 +54,20 @@ public class SamplePlayerControl : MonoBehaviour
             powerIndicator?.SetActive(true);
         }
     }
-    IEnumerable PlayerPolwerUp()
+    IEnumerator PlayerPolwerUp()
     {
         isPowerUp = true;
         powerIndicator.SetActive(true);
+
         yield return new WaitForSeconds(powerUpDuration);
+        
         isPowerUp = false;
         powerIndicator.SetActive(false);
     }
 
-    private void PowerUpTimeOver()
-    {
-        isPowerUp = false;
-        powerIndicator.SetActive(false);
-    }
-    
-    private void OnCollisionEnter(Collision collision)
-    {
-        ICollisionable col = collision.gameObject.GetComponent<ICollisionable>();
-        if (col != null)
-        {
-            Debug.Log("col 충돌!");
-            col.CollideWithPlayer(transform, impactPower);
-        }
-    }
+    //private void PowerUpTimeOver()
+    //{
+    //    isPowerUp = false;
+    //    powerIndicator.SetActive(false);
+    //}
 }

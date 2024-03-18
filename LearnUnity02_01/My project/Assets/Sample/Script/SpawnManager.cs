@@ -10,13 +10,15 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private Transform dollarSpawnPosition;
     [SerializeField] private GameObject powerUpItem;
     [SerializeField] private Transform powerUpSpawnPosition;
+    [SerializeField] private Transform spawnZone;
     public int enemyCount = 0;
-    public int waveNumber = 0;
+    public int waveNumber = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        // SpawnEnemy(waveNumber);
+        
+        SpawnEnemy(waveNumber);
         SpawnItem();
     }
 
@@ -35,7 +37,7 @@ public class SpawnManager : MonoBehaviour
     // 한개의 적만 특정위치에서 생성되는 코드
     private void SpawnEnemy(int spawnNumber)
     {
-        for(int i = 0; i <= spawnNumber; i++)
+        for(int i = 0; i < spawnNumber; i++)
         {
             GameObject enemyObj = Instantiate(enemy, enemySpawnPosition.position, Quaternion.identity);
         }
@@ -55,7 +57,8 @@ public class SpawnManager : MonoBehaviour
     }
     private Vector3 RandomSpawnPosition()
     {
-        Vector3 randomPos = new Vector3(0, 0, 0);
+        Vector3 random = Random.rotation()
+        Vector3 randomPos = new Vector3(spawnZone.position);
         return randomPos;
     }
 }
