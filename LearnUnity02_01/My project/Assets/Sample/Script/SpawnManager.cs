@@ -11,12 +11,12 @@ public class SpawnManager : MonoBehaviour
     [SerializeField] private GameObject powerUpItem;
     [SerializeField] private Transform powerUpSpawnPosition;
     public int enemyCount = 0;
-    public int waveNumber = 1;
+    public int waveNumber = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        SpawnEnemy(waveNumber);
+        // SpawnEnemy(waveNumber);
         SpawnItem();
     }
 
@@ -26,6 +26,7 @@ public class SpawnManager : MonoBehaviour
         enemyCount = FindObjectsOfType<SampleEnemy>().Length;
         if (enemyCount == 0)
         {
+            Debug.Log("hiUpdate");
             SpawnEnemy(waveNumber);
             waveNumber++;
         }
@@ -51,5 +52,10 @@ public class SpawnManager : MonoBehaviour
             itemObj = Instantiate(powerUpItem, powerUpSpawnPosition.position, Quaternion.identity);
 
         return itemObj;
+    }
+    private Vector3 RandomSpawnPosition()
+    {
+        Vector3 randomPos = new Vector3(0, 0, 0);
+        return randomPos;
     }
 }

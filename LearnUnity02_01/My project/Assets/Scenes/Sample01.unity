@@ -413,6 +413,8 @@ MonoBehaviour:
   moveSpeed: 1.5
   powerIndicator: {fileID: 1319872065}
   isPowerUp: 0
+  powerUpDuration: 1
+  impactPower: 10
 --- !u!54 &726214869
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -822,7 +824,7 @@ MonoBehaviour:
   powerUpItem: {fileID: 2866261803715952853, guid: 7f118a7e0efe51f4b823e168ed15ef96, type: 3}
   powerUpSpawnPosition: {fileID: 1330383143}
   enemyCount: 0
-  waveNumber: 1
+  waveNumber: 0
 --- !u!1001 &1586356024
 PrefabInstance:
   m_ObjectHideFlags: 0

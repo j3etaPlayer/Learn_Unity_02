@@ -10,6 +10,7 @@ public class SamplePlayerControl : MonoBehaviour
     [SerializeField] private GameObject powerIndicator; // 파워업 상태를 확인하기위한 오브젝트
     public bool isPowerUp = false;
     [SerializeField] private float powerUpDuration = 1f;
+    [SerializeField] private float impactPower = 10f;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,8 @@ public class SamplePlayerControl : MonoBehaviour
         playerRigid.AddForce(direction * moveSpeed);
         if (isPowerUp)
         {
-            Invoke("PowerUpTimeOver", powerUpDuration);          // 뒤의 변수 : 파워업이 지속되길 원하는 시간 => 변수화 시켜서 데이터를 변경하거나 조합할 수 있다.
+            StartCoroutine("PlayerPolwerUp");
+            //Invoke("PowerUpTimeOver", powerUpDuration);          // 뒤의 변수 : 파워업이 지속되길 원하는 시간 => 변수화 시켜서 데이터를 변경하거나 조합할 수 있다.
         }
     }
 
@@ -42,6 +44,14 @@ public class SamplePlayerControl : MonoBehaviour
             powerIndicator?.SetActive(true);
         }
     }
+    IEnumerable PlayerPolwerUp()
+    {
+        isPowerUp = true;
+        powerIndicator.SetActive(true);
+        yield return new WaitForSeconds(powerUpDuration);
+        isPowerUp = false;
+        powerIndicator.SetActive(false);
+    }
 
     private void PowerUpTimeOver()
     {
@@ -51,12 +61,11 @@ public class SamplePlayerControl : MonoBehaviour
     
     private void OnCollisionEnter(Collision collision)
     {
-        //if (collision.gameObject.CompareTag("Enemy"))
-        //{
-        //    Debug.Log("충돌!");
-        //    Vector3 CollidEnemy = (collision.transform.position - transform.position).normalized;
-        //    Rigidbody enemyrigid = collision.gameObject.GetComponent<Rigidbody>();
-        //    enemyrigid.AddForce(CollidEnemy * impact, ForceMode.Impulse);
-        //}
+        ICollisionable col = collision.gameObject.GetComponent<ICollisionable>();
+        if (col != null)
+        {
+            Debug.Log("col 충돌!");
+            col.CollideWithPlayer(transform, impactPower);
+        }
     }
 }

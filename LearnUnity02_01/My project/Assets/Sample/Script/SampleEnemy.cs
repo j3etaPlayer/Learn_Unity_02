@@ -2,7 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SampleEnemy : MonoBehaviour
+public interface ICollisionable
+{
+    public void CollideWithPlayer(Transform player, float impectPower); // Player과 부딪힌 객체가 특정 방향으로 날라가는 기능을 인터페이스ㄹ하겠다.
+}
+
+public class SampleEnemy : MonoBehaviour, ICollisionable
 {
     [SerializeField] private GameObject targetPoint;
     [SerializeField] private float enemyMoveSpeed;
@@ -57,5 +62,13 @@ public class SampleEnemy : MonoBehaviour
 
             Debug.Log($"destroy {other.name}");
         }
+    }
+
+    public void CollideWithPlayer(Transform player, float impectPower)
+    {
+        // 플레이어와 충돌했을 때 객체가 날라가는 로직을 작성
+        Vector3 awayVector = (transform.position - player.transform.position).normalized;  // 날라갈 방향 - 출발할 위치(player)
+
+        enemyRigid.AddForce(awayVector * impectPower, ForceMode.Impulse);
     }
 }
