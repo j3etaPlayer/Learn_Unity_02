@@ -55,10 +55,10 @@ public class SpawnManager : MonoBehaviour
 
         return itemObj;
     }
-    private Vector3 RandomSpawnPosition()
-    {
-        Vector3 random = Random.rotation()
-        Vector3 randomPos = new Vector3(spawnZone.position);
-        return randomPos;
-    }
+    //private Vector3 RandomSpawnPosition()
+    //{
+    //    Vector3 random = Random.rotation()
+    //    Vector3 randomPos = new Vector3(spawnZone.position);
+    //    return randomPos;
+    //}
 }
