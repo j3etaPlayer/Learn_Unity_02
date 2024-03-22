@@ -34,9 +34,12 @@ namespace CameraSetting
         private float activeMoveSpeed;                          // 실제로 플레이어가 이동할 속력을 저장할 변수
         private Vector3 moveMent;                               // 플레이어가 움직이는 방향과 거리가 최종 Vector값
 
+        private Animator playerAnimator;
+
         void Start()
         {
             playerCCon = GetComponent<CharacterController>();
+            playerAnimator = GetComponentInChildren<Animator>();
         }
 
         void Update()
@@ -94,7 +97,11 @@ namespace CameraSetting
             if (moveAmount > 0)                                             // moveInput이 0일때 moveDirection이 0이된다.
             {
                 targetRotation = Quaternion.LookRotation(moveDirection);
+                playerAnimator.SetBool("isMove", true);
             }
+            else
+                playerAnimator.SetBool("isMove", false);
+
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, smoothRotation * Time.deltaTime);
             
             playerCCon.Move(moveMent * Time.deltaTime);
