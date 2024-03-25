@@ -1,0 +1,329 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.14f1 (eff2de9070d8) revision 15725278'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'ko' Physical Memory: 16318 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2022.3.14f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/Administrator/Documents/ë°•ì¤€ë¯¼/Learn_Unity_02/LearnUnity02_01/My project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+49976
+Successfully changed project path to: C:/Users/Administrator/Documents/ë°•ì¤€ë¯¼/Learn_Unity_02/LearnUnity02_01/My project
+C:/Users/Administrator/Documents/ë°•ì¤€ë¯¼/Learn_Unity_02/LearnUnity02_01/My project
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [17320] Host "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 1705480428 [EditorId] 1705480428 [Version] 1048832 [Id] WindowsEditor(7,I-15) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [17320] Host "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 1705480428 [EditorId] 1705480428 [Version] 1048832 [Id] WindowsEditor(7,I-15) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 10.59 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.14f1 (eff2de9070d8)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.14f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Administrator/Documents/ë°•ì¤€ë¯¼/Learn_Unity_02/LearnUnity02_01/My project/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2022.3.14f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2022.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2022.3.14f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2022.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.008008 seconds.
+- Loaded All Assemblies, in  0.443 seconds
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.326 seconds
+Domain Reload Profiling: 767ms
+	BeginReloadAssembly (144ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (75ms)
+	LoadAllAssembliesAndSetupDomain (166ms)
+		LoadAssemblies (142ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (163ms)
+			TypeCache.Refresh (162ms)
+				TypeCache.ScanAssembly (146ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (326ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (250ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (12ms)
+			SetLoadedEditorAssemblies (9ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (163ms)
+			ProcessInitializeOnLoadMethodAttributes (62ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.804 seconds
+Refreshing native plugins compatible for Editor in 4.20 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.774 seconds
+Domain Reload Profiling: 1575ms
+	BeginReloadAssembly (193ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (8ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (44ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (51ms)
+	LoadAllAssembliesAndSetupDomain (499ms)
+		LoadAssemblies (406ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (206ms)
+			TypeCache.Refresh (181ms)
+				TypeCache.ScanAssembly (164ms)
+			ScanForSourceGeneratedMonoScriptInfo (17ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (775ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (588ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (424ms)
+			ProcessInitializeOnLoadMethodAttributes (30ms)
+			AfterProcessingInitializeOnLoad (11ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 3.75 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3110 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 32 unused Assets / (56.8 KB). Loaded Objects now: 3576.
+Memory consumption went from 127.7 MB to 127.7 MB.
+Total: 7.527100 ms (FindLiveObjects: 0.657500 ms CreateObjectMapping: 0.764700 ms MarkObjects: 5.962100 ms  DeleteObjects: 0.141500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 445.752436 seconds.
+  path: Assets/Red Knight
+  artifactKey: Guid(3f70fc9a86f4c8a408ed94abafdb76a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight using Guid(3f70fc9a86f4c8a408ed94abafdb76a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac071c00bc2d2c9d45a19527c75cac7') in 0.004534 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Red Knight/Red Knight(1).PNG
+  artifactKey: Guid(c174611e5b796ab4c9d6e613d9516d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Red Knight(1).PNG using Guid(c174611e5b796ab4c9d6e613d9516d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9edf1050ab211b9c7542e1b3d483791f') in 0.073307 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 15.427121 seconds.
+  path: Assets/Scene
+  artifactKey: Guid(be2bdc39c980f1e49ab36a0f182bbedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scene using Guid(be2bdc39c980f1e49ab36a0f182bbedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ccd46b30f476e77ed1592b8ed82cdc') in 0.000672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 37.466607 seconds.
+  path: Assets/Scene/3DGraphics.unity
+  artifactKey: Guid(aa94b5e5ed8acdb409ec4430117793c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scene/3DGraphics.unity using Guid(aa94b5e5ed8acdb409ec4430117793c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199da8af68072cdcb808b186feae50e0') in 0.000516 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 48.287023 seconds.
+  path: Assets/Red Knight/Animations
+  artifactKey: Guid(d6d3a83b96d94834aa3370f014aa2aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations using Guid(d6d3a83b96d94834aa3370f014aa2aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1a9c9d95bf236c0c0c274e106ad7ca') in 0.000507 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.881401 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3
+  artifactKey: Guid(149979e7d7319ab4da6ef5e85fa11b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3 using Guid(149979e7d7319ab4da6ef5e85fa11b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8127e718090e2052be6d6d3243a548') in 0.000499 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.078558 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Aert.fbx
+  artifactKey: Guid(d44996dd7adcac34fb47453746f62255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Aert.fbx using Guid(d44996dd7adcac34fb47453746f62255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feca4c0083170e590a14f99b8e83cc90') in 0.017824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@IdleB.fbx
+  artifactKey: Guid(9014955fb9466f2438eb7fd51f9b3ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@IdleB.fbx using Guid(9014955fb9466f2438eb7fd51f9b3ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0eb71f98218a26c7736b2b379889be') in 0.005104 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Die2.fbx
+  artifactKey: Guid(ed6fb3fc9829ded4083d13bf68c32347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Die2.fbx using Guid(ed6fb3fc9829ded4083d13bf68c32347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb6424bc5367e892314afc29e28c814') in 0.006837 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Run.fbx
+  artifactKey: Guid(3da53d6eb7d86db4984cd87a53ca69d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Run.fbx using Guid(3da53d6eb7d86db4984cd87a53ca69d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5e7302f6afe96bc937e6019b8513f3') in 0.004431 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@ATK2.fbx
+  artifactKey: Guid(8759c2ee09f38734b9f8feff97297fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@ATK2.fbx using Guid(8759c2ee09f38734b9f8feff97297fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9a77d5dfdd49d42c0578494b3b806b') in 0.004623 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Dash.fbx
+  artifactKey: Guid(20aba675959ff2f458d3b73e8ad0d0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Dash.fbx using Guid(20aba675959ff2f458d3b73e8ad0d0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60de4432fe02a2bd6eb41b94ad37d411') in 0.007202 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Block.fbx
+  artifactKey: Guid(505931f48931bf746a836f27049a08f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Block.fbx using Guid(505931f48931bf746a836f27049a08f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0d254ac350995d802bf0d135621446d') in 0.006510 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Die0.fbx
+  artifactKey: Guid(d1e952b055ddd014eb38ac6f9e486a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Die0.fbx using Guid(d1e952b055ddd014eb38ac6f9e486a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dba9584737060f740cc056c96acd9a5') in 0.005671 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Rest.fbx
+  artifactKey: Guid(92df8b5c2531b4f45a565e3ee513bd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Rest.fbx using Guid(92df8b5c2531b4f45a565e3ee513bd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbaa4f829afeaed8b548f94153695350') in 0.005501 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 165
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Jump.fbx
+  artifactKey: Guid(e7a460e1292c94d48b50d230d557f947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Jump.fbx using Guid(e7a460e1292c94d48b50d230d557f947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7b80f364d6f163a494943850caf7b0') in 0.005596 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@ATK4.fbx
+  artifactKey: Guid(e724c617927a9bd49a9203cf05693dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@ATK4.fbx using Guid(e724c617927a9bd49a9203cf05693dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4ad8116726411efebdd3fe8aec4ad4') in 0.005550 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Move.fbx
+  artifactKey: Guid(7538360199fd53248a059923f3012335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Move.fbx using Guid(7538360199fd53248a059923f3012335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33dea4a602b8cd859ef2598d4fa674d1') in 0.006753 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 161
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ½º·¹µå Á¾·á ¶Ç´Â ÀÀ¿ë ÇÁ·Î±×·¥ ¿äÃ» ¶§¹®¿¡ I/O ÀÛ¾÷ÀÌ Ãë¼ÒµÇ¾ú½À´Ï´Ù.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

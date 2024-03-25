@@ -48,7 +48,7 @@ namespace CameraSetting
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
 
-            // 키보드 Input과 입력 갑승ㄹ 확인하기 위한 변수 선언
+            // 키보드 Input과 입력 값을 확인하기 위한 변수 선언
             Vector3 moveInput = new Vector3(horizontal, 0, vertical);                       // 키보드 입력값을 저장하는 벡터
             float moveAmount = Mathf.Clamp01(Mathf.Abs(horizontal) + Mathf.Abs(vertical));  // 키보드로 상하 좌우키 한개만 입력하면 0보다 큰 값을 moveAmount에 저장한다.
 
@@ -60,13 +60,21 @@ namespace CameraSetting
             // 현재위치 + 속도 + 가속도 = 이동 거리
             // transform.position += moveDir * moveSpeed * Time.deltaTime;
 
-            Vector3 moveDirection = thirdCam.camLookRotation * moveInput;   // 플레이어가 이동할 방향을 저장하는 변수 moveDirection
+            Vector3 moveDirection = thirdCam.transform.forward * moveInput.z
+                                    + thirdCam.transform.right * moveInput.x;   // 플레이어가 이동할 방향을 저장하는 변수 moveDirection
+            moveDirection.y = 0;
 
             // 4. 플레이어의 이동속도를 다르게해주는 코드(달리기)
             if (Input.GetKey(KeyCode.LeftShift))                             // key down : 누를때 한번만 적용, key : key를 떼기전까지는 계속
+            {
                 activeMoveSpeed = runSpeed;
+                playerAnimator.SetBool("isRun", true);
+            }
             else
+            {
                 activeMoveSpeed = moveSpeed;
+                playerAnimator.SetBool("isRun", false);
+            }
 
             // 5. 점프를 하기 위한 계산식 (중력이 필요하다)
             float yValue = moveMent.y;                                      // 떨어지고있는 y의 크기를 저장
@@ -81,12 +89,15 @@ namespace CameraSetting
                 Debug.Log("땅에 있습니다.");
             }
             else
+            {
                 Debug.Log("공중입니다");
+            }
 
 
             // 점프키를 입려하여 점프 구현
             if (Input.GetButtonDown("Jump")&&isGrounded)
             {
+                playerAnimator.CrossFade("Jump", 0.2f); // 두번째 매개변수 : 현재 state에서 실행하고 싶은 에니메이션을 자동으로 blend 해주는 시간
                 moveMent.y = jumpForce;
             }
 
@@ -97,20 +108,24 @@ namespace CameraSetting
             if (moveAmount > 0)                                             // moveInput이 0일때 moveDirection이 0이된다.
             {
                 targetRotation = Quaternion.LookRotation(moveDirection);
-                playerAnimator.SetBool("isMove", true);
             }
-            else
-                playerAnimator.SetBool("isMove", false);
-
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, smoothRotation * Time.deltaTime);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, smoothRotation);
             
             playerCCon.Move(moveMent * Time.deltaTime);
+            
+            // dampTime : 첫번째 변수(이전 값), 두번째 변수(변화시키고 싶은 값), dampTime
+            playerAnimator.SetFloat("moveAmount", moveAmount, 0.2f, Time.deltaTime);
+
+
+
+
         }
 
         private void GroundCheck()  // player가 땅인지 아닌지 판별하는 함수
         {
             isGrounded = Physics.CheckSphere(transform.TransformPoint(groundCheckPoint), groundCheckRadius, groundLayer);    // 레이어가 ground인 물리충돌이 발생하면 크기가 groundcheckradius이고
-                                                                                                            // 시작점이checkpoint인 물리충돌이 발생하면 true, 아니면 false
+                                                                                                                             // 시작점이checkpoint인 물리충돌이 발생하면 true, 아니면 false
+            playerAnimator.SetBool("isGround", isGrounded);
         }
         private void OnDrawGizmos() // 눈에 안보이는 땅체크 함수를 가시화 하기 위해 선언
         {
