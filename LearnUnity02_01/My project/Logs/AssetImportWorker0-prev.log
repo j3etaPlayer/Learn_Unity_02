@@ -15,7 +15,7 @@ C:/Users/Administrator/Documents/ë°•ì¤€ë¯¼/Learn_Unity_02/LearnUnity02_01/My pro
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49976
+50042
 Successfully changed project path to: C:/Users/Administrator/Documents/ë°•ì¤€ë¯¼/Learn_Unity_02/LearnUnity02_01/My project
 C:/Users/Administrator/Documents/ë°•ì¤€ë¯¼/Learn_Unity_02/LearnUnity02_01/My project
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Users/Administrator/Documents/ë°•ì¤€ë¯¼/Learn_Unity_02/LearnUnity02_01/My pro
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [17320] Host "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 1705480428 [EditorId] 1705480428 [Version] 1048832 [Id] WindowsEditor(7,I-15) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [17300] Host "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 2064658640 [EditorId] 2064658640 [Version] 1048832 [Id] WindowsEditor(7,I-15) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [17320] Host "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 1705480428 [EditorId] 1705480428 [Version] 1048832 [Id] WindowsEditor(7,I-15) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [17300] Host "[IP] 192.168.0.188 [Port] 0 [Flags] 2 [Guid] 2064658640 [EditorId] 2064658640 [Version] 1048832 [Id] WindowsEditor(7,I-15) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
-Refreshing native plugins compatible for Editor in 10.59 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 10.04 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.14f1 (eff2de9070d8)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -70,44 +70,44 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2022.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2022.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2022.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56136
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56304
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2022.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.008008 seconds.
-- Loaded All Assemblies, in  0.443 seconds
+Registered in 0.007939 seconds.
+- Loaded All Assemblies, in  0.431 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.326 seconds
-Domain Reload Profiling: 767ms
-	BeginReloadAssembly (144ms)
+- Finished resetting the current domain, in  0.320 seconds
+Domain Reload Profiling: 749ms
+	BeginReloadAssembly (137ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (42ms)
+	RebuildCommonClasses (41ms)
 	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (75ms)
-	LoadAllAssembliesAndSetupDomain (166ms)
-		LoadAssemblies (142ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (171ms)
+		LoadAssemblies (135ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (163ms)
-			TypeCache.Refresh (162ms)
-				TypeCache.ScanAssembly (146ms)
-			ScanForSourceGeneratedMonoScriptInfo (1ms)
+		AnalyzeDomain (169ms)
+			TypeCache.Refresh (167ms)
+				TypeCache.ScanAssembly (151ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (326ms)
+	FinalizeReload (320ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (250ms)
+		SetupLoadedEditorAssemblies (242ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (12ms)
-			SetLoadedEditorAssemblies (9ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (10ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (163ms)
-			ProcessInitializeOnLoadMethodAttributes (62ms)
+			ProcessInitializeOnLoadAttributes (158ms)
+			ProcessInitializeOnLoadMethodAttributes (59ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 767ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.804 seconds
-Refreshing native plugins compatible for Editor in 4.20 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.802 seconds
+Refreshing native plugins compatible for Editor in 3.62 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.774 seconds
-Domain Reload Profiling: 1575ms
-	BeginReloadAssembly (193ms)
+- Finished resetting the current domain, in  0.796 seconds
+Domain Reload Profiling: 1596ms
+	BeginReloadAssembly (187ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (29ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (14ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (499ms)
-		LoadAssemblies (406ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (42ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (56ms)
+	LoadAllAssembliesAndSetupDomain (501ms)
+		LoadAssemblies (396ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (206ms)
-			TypeCache.Refresh (181ms)
-				TypeCache.ScanAssembly (164ms)
+		AnalyzeDomain (215ms)
+			TypeCache.Refresh (191ms)
+				TypeCache.ScanAssembly (173ms)
 			ScanForSourceGeneratedMonoScriptInfo (17ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (775ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (797ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (588ms)
+		SetupLoadedEditorAssemblies (607ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (8ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (110ms)
-			ProcessInitializeOnLoadAttributes (424ms)
-			ProcessInitializeOnLoadMethodAttributes (30ms)
-			AfterProcessingInitializeOnLoad (11ms)
+			BeforeProcessingInitializeOnLoad (119ms)
+			ProcessInitializeOnLoadAttributes (438ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 3.75 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.10 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3110 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 32 unused Assets / (56.8 KB). Loaded Objects now: 3576.
-Memory consumption went from 127.7 MB to 127.7 MB.
-Total: 7.527100 ms (FindLiveObjects: 0.657500 ms CreateObjectMapping: 0.764700 ms MarkObjects: 5.962100 ms  DeleteObjects: 0.141500 ms)
+Unloading 32 unused Assets / (56.9 KB). Loaded Objects now: 3577.
+Memory consumption went from 127.8 MB to 127.8 MB.
+Total: 4.440500 ms (FindLiveObjects: 0.331100 ms CreateObjectMapping: 0.362000 ms MarkObjects: 3.622500 ms  DeleteObjects: 0.123900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -179,149 +179,182 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.560 seconds
+Refreshing native plugins compatible for Editor in 4.09 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.114 seconds
+Domain Reload Profiling: 1671ms
+	BeginReloadAssembly (181ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (38ms)
+	RebuildNativeTypeToScriptingClass (17ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (277ms)
+		LoadAssemblies (359ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (1115ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (593ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (116ms)
+			ProcessInitializeOnLoadAttributes (429ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 3.81 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3093 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3580.
+Memory consumption went from 126.5 MB to 126.4 MB.
+Total: 3.821100 ms (FindLiveObjects: 0.333200 ms CreateObjectMapping: 0.276700 ms MarkObjects: 3.154600 ms  DeleteObjects: 0.055800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
 Received Import Request.
-  Time since last request: 445.752436 seconds.
-  path: Assets/Red Knight
-  artifactKey: Guid(3f70fc9a86f4c8a408ed94abafdb76a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight using Guid(3f70fc9a86f4c8a408ed94abafdb76a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac071c00bc2d2c9d45a19527c75cac7') in 0.004534 seconds
+  Time since last request: 437.825904 seconds.
+  path: Assets/2_Art/Animator/RedKnight.controller
+  artifactKey: Guid(87be6e8f16c21464ab4cab39f66f72a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/2_Art/Animator/RedKnight.controller using Guid(87be6e8f16c21464ab4cab39f66f72a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3226c68972b924fd8e833c887e132990') in 0.017669 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 80.174771 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza
+  artifactKey: Guid(70b9c941ef1124745803eba857c82954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza using Guid(70b9c941ef1124745803eba857c82954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '877efa86d4e8ef47af5d4d2e0c3c15e0') in 0.000469 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Red Knight/Red Knight(1).PNG
-  artifactKey: Guid(c174611e5b796ab4c9d6e613d9516d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Red Knight(1).PNG using Guid(c174611e5b796ab4c9d6e613d9516d52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9edf1050ab211b9c7542e1b3d483791f') in 0.073307 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Import Request.
-  Time since last request: 15.427121 seconds.
-  path: Assets/Scene
-  artifactKey: Guid(be2bdc39c980f1e49ab36a0f182bbedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scene using Guid(be2bdc39c980f1e49ab36a0f182bbedb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7ccd46b30f476e77ed1592b8ed82cdc') in 0.000672 seconds
+  Time since last request: 1.017835 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials
+  artifactKey: Guid(6a2861bb1fc2bf549863c6fc8bd13f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials using Guid(6a2861bb1fc2bf549863c6fc8bd13f3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e01072c5ce978dd7e7bd2f243604c3b') in 0.000436 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 37.466607 seconds.
-  path: Assets/Scene/3DGraphics.unity
-  artifactKey: Guid(aa94b5e5ed8acdb409ec4430117793c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scene/3DGraphics.unity using Guid(aa94b5e5ed8acdb409ec4430117793c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '199da8af68072cdcb808b186feae50e0') in 0.000516 seconds
+  Time since last request: 1.143230 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials
+  artifactKey: Guid(399cff2d68318a946838ccb784ef4c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials using Guid(399cff2d68318a946838ccb784ef4c77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df930d1abd5fc002968a49aa39ebb39') in 0.000531 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 48.287023 seconds.
-  path: Assets/Red Knight/Animations
-  artifactKey: Guid(d6d3a83b96d94834aa3370f014aa2aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations using Guid(d6d3a83b96d94834aa3370f014aa2aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae1a9c9d95bf236c0c0c274e106ad7ca') in 0.000507 seconds
+  Time since last request: 0.984190 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard
+  artifactKey: Guid(5b101da68e9261049841c73c48f7a8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard using Guid(5b101da68e9261049841c73c48f7a8d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '013067d89ae60ee854c7e517b0843c11') in 0.000572 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.881401 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3
-  artifactKey: Guid(149979e7d7319ab4da6ef5e85fa11b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3 using Guid(149979e7d7319ab4da6ef5e85fa11b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'de8127e718090e2052be6d6d3243a548') in 0.000499 seconds
+  Time since last request: 0.045307 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Blue1.mat
+  artifactKey: Guid(663834164c6a04740aaa1b778249ce7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Blue1.mat using Guid(663834164c6a04740aaa1b778249ce7e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db2c738a525272a6108824bc90eff072') in 0.313803 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.078558 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Aert.fbx
-  artifactKey: Guid(d44996dd7adcac34fb47453746f62255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Aert.fbx using Guid(d44996dd7adcac34fb47453746f62255) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'feca4c0083170e590a14f99b8e83cc90') in 0.017824 seconds
+  Time since last request: 0.000029 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Green3.mat
+  artifactKey: Guid(f6298605825d7154f8923c76872aa46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Green3.mat using Guid(f6298605825d7154f8923c76872aa46e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af30419b2792e287da3cac1bf67a3543') in 0.021719 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
+Number of asset objects unloaded after import = 4
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@IdleB.fbx
-  artifactKey: Guid(9014955fb9466f2438eb7fd51f9b3ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@IdleB.fbx using Guid(9014955fb9466f2438eb7fd51f9b3ed2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0eb71f98218a26c7736b2b379889be') in 0.005104 seconds
+  Time since last request: 0.000031 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey4.mat
+  artifactKey: Guid(8d530ffe6c4968843806085897955b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey4.mat using Guid(8d530ffe6c4968843806085897955b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7faecaa56e06ab2b4c1d1b5eecb48f4') in 0.019502 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Die2.fbx
-  artifactKey: Guid(ed6fb3fc9829ded4083d13bf68c32347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Die2.fbx using Guid(ed6fb3fc9829ded4083d13bf68c32347) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5eb6424bc5367e892314afc29e28c814') in 0.006837 seconds
+  Time since last request: 0.000020 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Blue3.mat
+  artifactKey: Guid(b0b4de3bd6e976e4f8b3adc6e72377ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Blue3.mat using Guid(b0b4de3bd6e976e4f8b3adc6e72377ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e28e1f5aab618676155cbcfa0ac65ed') in 0.020398 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Run.fbx
-  artifactKey: Guid(3da53d6eb7d86db4984cd87a53ca69d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Run.fbx using Guid(3da53d6eb7d86db4984cd87a53ca69d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b5e7302f6afe96bc937e6019b8513f3') in 0.004431 seconds
+  Time since last request: 0.000030 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Cyan.mat
+  artifactKey: Guid(cba66c276aed0874091de1c33eb3950d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Cyan.mat using Guid(cba66c276aed0874091de1c33eb3950d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb52731a46039009498d2d34a7e267e7') in 0.015978 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@ATK2.fbx
-  artifactKey: Guid(8759c2ee09f38734b9f8feff97297fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@ATK2.fbx using Guid(8759c2ee09f38734b9f8feff97297fd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef9a77d5dfdd49d42c0578494b3b806b') in 0.004623 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Dash.fbx
-  artifactKey: Guid(20aba675959ff2f458d3b73e8ad0d0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Dash.fbx using Guid(20aba675959ff2f458d3b73e8ad0d0b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60de4432fe02a2bd6eb41b94ad37d411') in 0.007202 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Block.fbx
-  artifactKey: Guid(505931f48931bf746a836f27049a08f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Block.fbx using Guid(505931f48931bf746a836f27049a08f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0d254ac350995d802bf0d135621446d') in 0.006510 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
-========================================================================
-Received Import Request.
-  Time since last request: 0.000041 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Die0.fbx
-  artifactKey: Guid(d1e952b055ddd014eb38ac6f9e486a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Die0.fbx using Guid(d1e952b055ddd014eb38ac6f9e486a6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4dba9584737060f740cc056c96acd9a5') in 0.005671 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Rest.fbx
-  artifactKey: Guid(92df8b5c2531b4f45a565e3ee513bd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Rest.fbx using Guid(92df8b5c2531b4f45a565e3ee513bd88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbaa4f829afeaed8b548f94153695350') in 0.005501 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 165
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Jump.fbx
-  artifactKey: Guid(e7a460e1292c94d48b50d230d557f947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Jump.fbx using Guid(e7a460e1292c94d48b50d230d557f947) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7b80f364d6f163a494943850caf7b0') in 0.005596 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
-========================================================================
-Received Import Request.
-  Time since last request: 0.000042 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@ATK4.fbx
-  artifactKey: Guid(e724c617927a9bd49a9203cf05693dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@ATK4.fbx using Guid(e724c617927a9bd49a9203cf05693dd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf4ad8116726411efebdd3fe8aec4ad4') in 0.005550 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
+Number of asset objects unloaded after import = 3
 ========================================================================
 Received Import Request.
   Time since last request: 0.000016 seconds.
-  path: Assets/Red Knight/Animations/Animations_v3/AnimSD@Move.fbx
-  artifactKey: Guid(7538360199fd53248a059923f3012335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Red Knight/Animations/Animations_v3/AnimSD@Move.fbx using Guid(7538360199fd53248a059923f3012335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33dea4a602b8cd859ef2598d4fa674d1') in 0.006753 seconds
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey2.mat
+  artifactKey: Guid(07dc66ae04b7f6a43b9674bf0fefb33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey2.mat using Guid(07dc66ae04b7f6a43b9674bf0fefb33a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72cc046597771d36e4dc956a4f9a38cf') in 0.015269 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 161
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Brown.mat
+  artifactKey: Guid(a54b7ad866d3a9b47bbf3b53baa0acc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Brown.mat using Guid(a54b7ad866d3a9b47bbf3b53baa0acc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc343a277098527bc4965fc419f713ad') in 0.017072 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 5.797941 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Orange.mat
+  artifactKey: Guid(652107f36a28e44479c0b827dee5852a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Orange.mat using Guid(652107f36a28e44479c0b827dee5852a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9df3a9ecefe22b244f9f44038098c5') in 0.024737 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 6.324666 seconds.
+  path: Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Red.mat
+  artifactKey: Guid(5a26de236ce89e94b963be8fa2b7ade6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/1_Download/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Red.mat using Guid(5a26de236ce89e94b963be8fa2b7ade6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7c0ac819742601981b5e6fa40cb0f03') in 0.018695 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
 Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
 TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ½º·¹µå Á¾·á ¶Ç´Â ÀÀ¿ë ÇÁ·Î±×·¥ ¿äÃ» ¶§¹®¿¡ I/O ÀÛ¾÷ÀÌ Ãë¼ÒµÇ¾ú½À´Ï´Ù.
 AssetImportWorker is now disconnected from the server

@@ -7,8 +7,12 @@ namespace CameraSetting
 {
     [RequireComponent(typeof(CharacterController))]
 
-    public class PlayerControler : MonoBehaviour
+    public class PlayerMovementManager : MonoBehaviour
     {
+        PlayerManager player;
+        [Header("플레이어 매니저 스크립트")]
+        [HideInInspector] public PlayerAnimationManager animationManager;
+
         [Header("플레이어 입력 제어 변수")]
         [SerializeField] private float runSpeed;        // 플레이어 달리기 속도
         [SerializeField] private float moveSpeed;       // 플레이어 기본 속도
@@ -36,20 +40,42 @@ namespace CameraSetting
 
         private Animator playerAnimator;
 
+        private void Awake()
+        {
+            player = GetComponent<PlayerManager>();
+        }
         void Start()
         {
             playerCCon = GetComponent<CharacterController>();
             playerAnimator = GetComponentInChildren<Animator>();
         }
-
         void Update()
         {
+            HandleMovement();
+            HandleActionInput();
+        }
+
+        private void GroundCheck()  // player가 땅인지 아닌지 판별하는 함수
+        {
+            isGrounded = Physics.CheckSphere(transform.TransformPoint(groundCheckPoint), groundCheckRadius, groundLayer);    // 레이어가 ground인 물리충돌이 발생하면 크기가 groundcheckradius이고
+                                                                                                                             // 시작점이checkpoint인 물리충돌이 발생하면 true, 아니면 false
+            playerAnimator.SetBool("isGround", isGrounded);
+        }
+        private void OnDrawGizmos() // 눈에 안보이는 땅체크 함수를 가시화 하기 위해 선언
+        {
+            Gizmos.color = new Color(0, 1, 0, 0.5f);
+            Gizmos.DrawWireSphere(transform.TransformPoint(groundCheckPoint), groundCheckRadius);
+        }
+        private void HandleMovement()
+        {
+            if (player.isPerformingAction) return;
+
             // 1. Input 클래스를 이용하여 키보드 입력을 제어
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
 
             // 키보드 Input과 입력 값을 확인하기 위한 변수 선언
-            Vector3 moveInput = new Vector3(horizontal, 0, vertical);                       // 키보드 입력값을 저장하는 벡터
+            Vector3 moveInput = new(horizontal, 0, vertical);                       // 키보드 입력값을 저장하는 벡터
             float moveAmount = Mathf.Clamp01(Mathf.Abs(horizontal) + Mathf.Abs(vertical));  // 키보드로 상하 좌우키 한개만 입력하면 0보다 큰 값을 moveAmount에 저장한다.
 
             // 힘을 줘서 이동한다.
@@ -69,6 +95,7 @@ namespace CameraSetting
             {
                 activeMoveSpeed = runSpeed;
                 playerAnimator.SetBool("isRun", true);
+                moveAmount++;
             }
             else
             {
@@ -95,7 +122,7 @@ namespace CameraSetting
 
 
             // 점프키를 입려하여 점프 구현
-            if (Input.GetButtonDown("Jump")&&isGrounded)
+            if (Input.GetButtonDown("Jump") && isGrounded)
             {
                 playerAnimator.CrossFade("Jump", 0.2f); // 두번째 매개변수 : 현재 state에서 실행하고 싶은 에니메이션을 자동으로 blend 해주는 시간
                 moveMent.y = jumpForce;
@@ -110,27 +137,23 @@ namespace CameraSetting
                 targetRotation = Quaternion.LookRotation(moveDirection);
             }
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, smoothRotation);
-            
+
             playerCCon.Move(moveMent * Time.deltaTime);
-            
+
             // dampTime : 첫번째 변수(이전 값), 두번째 변수(변화시키고 싶은 값), dampTime
             playerAnimator.SetFloat("moveAmount", moveAmount, 0.2f, Time.deltaTime);
-
-
-
-
+        }
+        private void HandleActionInput()
+        {
+            if (Input.GetMouseButton(0))
+            {
+                HandleAttackAction();
+            }
         }
 
-        private void GroundCheck()  // player가 땅인지 아닌지 판별하는 함수
+        private void HandleAttackAction()
         {
-            isGrounded = Physics.CheckSphere(transform.TransformPoint(groundCheckPoint), groundCheckRadius, groundLayer);    // 레이어가 ground인 물리충돌이 발생하면 크기가 groundcheckradius이고
-                                                                                                                             // 시작점이checkpoint인 물리충돌이 발생하면 true, 아니면 false
-            playerAnimator.SetBool("isGround", isGrounded);
-        }
-        private void OnDrawGizmos() // 눈에 안보이는 땅체크 함수를 가시화 하기 위해 선언
-        {
-            Gizmos.color = new Color(0, 1, 0, 0.5f);
-            Gizmos.DrawWireSphere(transform.TransformPoint(groundCheckPoint), groundCheckRadius);
+            player.playerAnimationManager.PlayerTargetActionAnimation("ATK0", true);
         }
     }
 }

@@ -356,11 +356,14 @@
 "Assets/1_Download/Sample/Script/SamplePlayerControler.cs"
 "Assets/1_Download/Sample/Script/SpawnManager.cs"
 "Assets/Camera/Scripts/FirstCamCamera.cs"
-"Assets/Camera/Scripts/PlayerControler.cs"
+"Assets/Camera/Scripts/PlayerMovementManager.cs"
 "Assets/Camera/Scripts/ThirdCamCamera.cs"
 "Assets/Camera/Scripts/TopViewCamera.cs"
 "Assets/EventFuction/Scripts/InitializeFuction.cs"
 "Assets/EventFuction/Scripts/UpdateFuction.cs"
+"Assets/Scripts/Player/PlayerAnimationManager.cs"
+"Assets/Scripts/Player/PlayerManager.cs"
+"Assets/Scripts/ResetActionFlag.cs"
 -langversion:9.0
 
 /deterministic
