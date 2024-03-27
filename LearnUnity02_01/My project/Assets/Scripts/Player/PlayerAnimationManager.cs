@@ -17,7 +17,7 @@ public class PlayerAnimationManager : MonoBehaviour
     public void PlayerTargetActionAnimation(string targetAnimation, bool isPerformingAcion,
                                                                     bool applyRootMotion = true,
                                                                     bool canRotate = false, 
-                                                                    bool canMove = false)   // 애니메이션 클립의 이름을 호출하여 각 playerManager에서 에니메이션을 쉽게 호출할수 있게 하느 ㄴ함수
+                                                                    bool canMove = false)           // 애니메이션 클립의 이름을 호출하여 각 playerManager에서 에니메이션을 쉽게 호출할수 있게 하는 함수
     {
         animator.CrossFade(targetAnimation, 0.2f);
         player.isPerformingAction = isPerformingAcion;

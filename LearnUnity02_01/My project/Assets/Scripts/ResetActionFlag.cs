@@ -9,6 +9,7 @@ public class ResetActionFlag : StateMachineBehaviour
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        // 스크립트에 진입시 초기화 해준다.
         if (player == null)
         {
             player = animator.GetComponent<PlayerManager>();

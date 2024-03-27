@@ -9,7 +9,6 @@ namespace CameraSetting
 
     public class PlayerMovementManager : MonoBehaviour
     {
-        PlayerManager player;
         [Header("플레이어 매니저 스크립트")]
         [HideInInspector] public PlayerAnimationManager animationManager;
 
@@ -29,15 +28,15 @@ namespace CameraSetting
 
         [Header("점프 제어 변수")]
         [SerializeField] private float gravityModifier;
-        [SerializeField] private Vector3 groundCheckPoint;    // 땅을 판별하기 위한 체크포인트
+        [SerializeField] private Vector3 groundCheckPoint;      // 땅을 판별하기 위한 체크포인트
         [SerializeField] private float groundCheckRadius;       // 땅 체크하는 구의 크기 반지름
         [SerializeField] private LayerMask groundLayer;         // 체크할 레이어가 땅인지 판별하는 변수
+
         private bool isGrounded;                                // true면 점프가 가능, false면 점프 제한
-
-
         private float activeMoveSpeed;                          // 실제로 플레이어가 이동할 속력을 저장할 변수
         private Vector3 moveMent;                               // 플레이어가 움직이는 방향과 거리가 최종 Vector값
 
+        PlayerManager player;
         private Animator playerAnimator;
 
         private void Awake()
@@ -52,16 +51,20 @@ namespace CameraSetting
         void Update()
         {
             HandleMovement();
+            HandleComboAttack();
             HandleActionInput();
         }
-
-        private void GroundCheck()  // player가 땅인지 아닌지 판별하는 함수
+        
+        // player가 땅인지 아닌지 판별하는 함수
+        private void GroundCheck()
         {
-            isGrounded = Physics.CheckSphere(transform.TransformPoint(groundCheckPoint), groundCheckRadius, groundLayer);    // 레이어가 ground인 물리충돌이 발생하면 크기가 groundcheckradius이고
-                                                                                                                             // 시작점이checkpoint인 물리충돌이 발생하면 true, 아니면 false
+            isGrounded = Physics.CheckSphere(transform.TransformPoint(groundCheckPoint), groundCheckRadius, groundLayer);
+            // 레이어가 ground인 물리충돌이 발생하면 크기가 groundcheckradius이고 시작점이checkpoint인 물리충돌이 발생하면 true, 아니면 false
             playerAnimator.SetBool("isGround", isGrounded);
         }
-        private void OnDrawGizmos() // 눈에 안보이는 땅체크 함수를 가시화 하기 위해 선언
+
+        // 눈에 안보이는 땅체크 함수를 가시화 하기 위해 선언
+        private void OnDrawGizmos() 
         {
             Gizmos.color = new Color(0, 1, 0, 0.5f);
             Gizmos.DrawWireSphere(transform.TransformPoint(groundCheckPoint), groundCheckRadius);
@@ -70,12 +73,11 @@ namespace CameraSetting
         {
             if (player.isPerformingAction) return;
 
-            // 1. Input 클래스를 이용하여 키보드 입력을 제어
-            float horizontal = Input.GetAxis("Horizontal");
+            float horizontal = Input.GetAxis("Horizontal");                                 // 1. Input 클래스를 이용하여 키보드 입력을 제어
             float vertical = Input.GetAxis("Vertical");
 
             // 키보드 Input과 입력 값을 확인하기 위한 변수 선언
-            Vector3 moveInput = new(horizontal, 0, vertical);                       // 키보드 입력값을 저장하는 벡터
+            Vector3 moveInput = new(horizontal, 0, vertical);                               // 키보드 입력값을 저장하는 벡터
             float moveAmount = Mathf.Clamp01(Mathf.Abs(horizontal) + Mathf.Abs(vertical));  // 키보드로 상하 좌우키 한개만 입력하면 0보다 큰 값을 moveAmount에 저장한다.
 
             // 힘을 줘서 이동한다.
@@ -91,7 +93,7 @@ namespace CameraSetting
             moveDirection.y = 0;
 
             // 4. 플레이어의 이동속도를 다르게해주는 코드(달리기)
-            if (Input.GetKey(KeyCode.LeftShift))                             // key down : 누를때 한번만 적용, key : key를 떼기전까지는 계속
+            if (Input.GetKey(KeyCode.LeftShift))                                // key down : 누를때 한번만 적용, key : key를 떼기전까지는 계속
             {
                 activeMoveSpeed = runSpeed;
                 playerAnimator.SetBool("isRun", true);
@@ -154,6 +156,15 @@ namespace CameraSetting
         private void HandleAttackAction()
         {
             player.playerAnimationManager.PlayerTargetActionAnimation("ATK0", true);
+            player.canCombo = true;                                                     // canCombo가 트루일때만 콤보어택을 할 수 있게 제어변수 선언
+        }
+        private void HandleComboAttack()
+        {
+            if (!player.canCombo) return;   // 예외 사항 처리
+            if(Input.GetMouseButtonDown(0))
+            {
+                player.animator.SetTrigger("doAttack");
+            }
         }
     }
 }

@@ -364,6 +364,7 @@
 "Assets/Scripts/Player/PlayerAnimationManager.cs"
 "Assets/Scripts/Player/PlayerManager.cs"
 "Assets/Scripts/ResetActionFlag.cs"
+"Assets/Scripts/UI/TitleUIManager.cs"
 -langversion:9.0
 
 /deterministic
