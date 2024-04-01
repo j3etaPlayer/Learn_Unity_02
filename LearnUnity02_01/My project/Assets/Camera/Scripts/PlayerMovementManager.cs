@@ -115,11 +115,6 @@ namespace CameraSetting
             if (isGrounded)
             {
                 moveMent.y = 0;
-                Debug.Log("땅에 있습니다.");
-            }
-            else
-            {
-                Debug.Log("공중입니다");
             }
 
 
