@@ -13,4 +13,6 @@ public class GameData
 
     [Header("time Data")]
     public float timeValue;
+
+    public string playerName;
 }

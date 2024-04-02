@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO.Enumeration;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class SaveManager : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class SaveManager : MonoBehaviour
 
     [Header("저장할 데이터 변수 정보")]
     public string fileName;
+    public SaveGameSlot currentSlot;
 
     private void Awake()
     {
@@ -34,12 +36,16 @@ public class SaveManager : MonoBehaviour
     {
         gameData = new GameData();
     }
-    private void Start()
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;   
+    }
+    
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         dataHandler = new DataHandler(Application.persistentDataPath, fileName);
         saveManagers = FindAllSaveManagers();
-        LoadGame();
-
         LoadGame();
     }
 
@@ -86,5 +92,10 @@ public class SaveManager : MonoBehaviour
 
         return new List<ISaveManager>(saveManagers);
     }
+    public void ChangeSaveFileNameBySelectSlot(SaveGameSlot slot)
+    {
+        currentSlot = slot;
 
+        fileName += slot.ToString() + ".txt";
+    }
 }

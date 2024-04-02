@@ -370,6 +370,7 @@
 "Assets/Scripts/SaveSystem/SaveManager.cs"
 "Assets/Scripts/UI/GamePlayUIManger.cs"
 "Assets/Scripts/UI/Loading/LoadingUI.cs"
+"Assets/Scripts/UI/SaveSlot.cs"
 "Assets/Scripts/UI/SetResolution.cs"
 "Assets/Scripts/UI/TimeUI.cs"
 "Assets/Scripts/UI/TitleUIManager.cs"

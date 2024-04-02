@@ -67,4 +67,17 @@ public class DataHandler
 
         return loaddata;
     }
+    public bool CheckFileExists(string dir, string file)
+    {
+        if(File.Exists(Path.Combine(dir, file)))
+            return true;
+        else
+            return false;
+    }
+    public void DataDelete()
+    {
+        string deletePath = Path.Combine(directoryPath, fileName);
+        if(File.Exists (deletePath))
+            File.Delete(deletePath);
+    }
 }
